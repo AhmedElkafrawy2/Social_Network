@@ -89,11 +89,12 @@ html , body {
     position: absolute;
 
 
-    background-image:  url('/images/core/14739159273120726_57da2c17f11e2.jpg');
+    background-image:  url('/images/core/Social.jpg');
     width: 557px;
     height: 378px;
     top: 150px;
     left: 92px;
+    box-shadow: 4px 4px 6px #000 , -4px -4px 6px #000 
 }
 
 .welcome-paragraph{
@@ -149,4 +150,8 @@ html , body {
     margin-left: 245px;
     font-size: 20px;
     font-weight: bold;
+}
+.gender-container{
+    
+    margin-left: 234px !important;
 }
