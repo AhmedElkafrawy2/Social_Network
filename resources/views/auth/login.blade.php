@@ -4,9 +4,10 @@
 <div class="content-login-page">
     <div class="container">
         <div class="row">
+            @include('welcomepagelogo')
             <div class="col-md-8 col-md-offset-2 login-margin-container">
-                
-                    <div class="panel-heading pa-heading">Login</div>
+
+              
 
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('login') }}">

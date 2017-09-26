@@ -4,9 +4,10 @@
 <div class="content-login-page">
     <div class="container">
         <div class="row">
+             @include('welcomepagelogo')
             <div class="col-md-8 col-md-offset-2 reg-margin-body">
-               
-                    <div class="panel-heading register-title">Register</div>
+                   
+                    
 
                     <div class="panel-body">
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">
@@ -54,7 +55,7 @@
                             </div>
                             <div class="form-group gender-container">
                                 
-
+                                <label for="email" class="col-md-4 control-label">Gender</label>
                                 <div class="col-md-6">
                                     <label class="radio-inline"><input type="radio" name="optradio" value="male" checked>Male</label>
                                     <label class="radio-inline"><input type="radio" name="optradio" value="female">Female</label>

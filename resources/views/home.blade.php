@@ -2,23 +2,35 @@
 
 @section('content')
 @include('nav')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Dashboard</div>
-
-                <div class="panel-body">
-                    @if (session('status'))
-                        <div class="alert alert-success">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
+<div class="home-page-left-section col-lg-2">
+    
+    <div class="information-section-content">
+        
+        <ul>
+            
+            <li class="first-list-element"><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><p> Shortcuts </p></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            <li><img src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}"  /><span>Ahmed Elkafrawy</span></li>
+            
+        </ul>
+        
+        
     </div>
+    
+    
 </div>
+<div class="home-page-posts-section col-lg-5"></div>
+<div class="home-page-suggested-section col-lg-3"></div>
+<div class="home-page-friends-section col-lg-2"></div>
 @endsection

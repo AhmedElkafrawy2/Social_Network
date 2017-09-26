@@ -28,12 +28,14 @@
             </div>
         </div-->
         
-       
+            @if (Auth::check())
+            @include('home')
+            @else
             <div class="Welcome-page-content">
                 <div class="welcome-page-links">
                     
                     <ul>                        
-                        <li class="list-brand">Social_Media</li>
+                        <li class="list-brand"><img src="{{ asset('images/core/logo.png') }}" /><span>Social_Media</span></li>
                         <li class="first-list-element"><img src="{{ asset('images/core/Capture1.png') }}" />Create Group</li>
                         <li><img src="{{ asset('images/core/Capture2.png') }}" />Create Pages</li>                     
                         <li><img src="{{ asset('images/core/Capture4.png') }}" />Login / Register</li>                        
@@ -49,5 +51,5 @@
                 </div>
                 
             </div>
-        
+            @endif
 @endsection

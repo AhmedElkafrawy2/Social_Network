@@ -78,6 +78,17 @@ html , body {
     margin-left: 37px;
     margin-top: 11px;
 }
+.list-brand img{
+    
+    width: 45px;
+    height: 45px;
+    
+}
+.list-brand span{
+    position: absolute;
+    left: 150px;
+    font-weight: bold;
+}
 .first-list-element{
     
     margin-left: 786px;
@@ -132,7 +143,7 @@ html , body {
 }
 .login-margin-container{
     
-    margin-top: 153px;
+    margin-top: 8px;
 }
 .pa-heading{
     
@@ -143,7 +154,7 @@ html , body {
 /* start register page */
 .reg-margin-body{
     
-    margin-top: 111px;
+   margin-top: 8px;
 }
 .register-title{
     
@@ -153,5 +164,148 @@ html , body {
 }
 .gender-container{
     
-    margin-left: 234px !important;
+    
 }
+
+/* start nav section */
+.main-nav-bar{
+    
+    background-color : #1DA1F2;
+    height: 67px;
+    margin-top: 0px;
+    margin-left: -54px;
+}
+.mynavbar-header .navbar-brand{
+    
+    color:#fff;
+    width: 233px;
+    margin-top: 6px;
+}
+.mynavbar-header .navbar-brand:hover{
+    
+    color:#fff;
+}
+.mynavbar-header .navbar-brand:focus{
+    
+    color:#fff;
+}
+.mynavbar-header a img{
+    
+    width:40px;
+    height: 40px;
+    float:left;
+    margin-right: 20px;
+    margin-top: -9px;
+}
+
+.homepage-search{
+    
+    width: 362px;
+    margin-top: 13px;
+    margin-left: 189px;
+}
+.my-original-data li{
+    
+    margin-top: -40px;
+}
+.my-original-data li a{
+    
+    float: left;
+    margin-left: 3px;
+    color:#fff !important;
+}
+.my-original-data li a:hover{
+    
+    float: left;
+    color:#fff !important;
+}
+
+.go-to-profile-page{
+    
+    margin-top: -3px;
+}
+.go-to-profile-page:hover{
+    
+    box-shadow: 3px 3px 3px #E9EBEE , -3px -3px 3px #E9EBEE;
+}
+.go-to-profile-page img{
+    
+    widows: 30px;
+    hieght:30px;
+    border-radius:50%;
+}
+
+.navbar-more{
+    
+    margin-left: 30px;
+}
+.navbar-mor ul li{
+    
+    color:#000;
+}
+.navbar-more ul li a{
+    
+    margin-top: 40px;
+    color: #000 !important;
+}
+/* welcome page logo and title befor login and register pages */
+
+.welcome-page-logo-title{
+    
+    margin: 40px 50%;
+    
+}
+.welcome-page-logo-title img{
+    
+    width:100px;
+    height: 100px;
+    
+}
+.welcome-page-logo-title p{
+    
+    width: 156px;
+    font-size: 22px;
+    margin-left: -33px;
+    margin-top: 28px;
+
+}
+/* satrt home page */
+
+/*  satrt left section    */
+
+.information-section-content{
+    
+    
+}
+
+.information-section-content ul{
+    
+    list-style: none;
+    width: 105%;
+}
+.information-section-content ul li{
+    
+     margin: 0 15px 15px 0;
+}
+.information-section-content ul p{
+    
+    
+}
+
+.information-section-content ul li img{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.information-section-content ul li span{
+    
+    
+}
+
+.first-list-element span{
+    
+    margin-left: 11px;
+}
+/* end home page */
