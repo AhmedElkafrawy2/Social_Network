@@ -21,5 +21,10 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+/*
+ * make route to user profile page 
+ * 
+ */
+Route::get("/{username}" , "ProfilePageController@userprofilepage");
 
 
