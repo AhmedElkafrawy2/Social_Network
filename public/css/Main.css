@@ -275,7 +275,8 @@ html , body {
 
 .information-section-content{
     
-    
+    float: left;
+    margin-left: -16px;
 }
 
 .information-section-content ul{
@@ -291,21 +292,465 @@ html , body {
     
     
 }
+.first-element-image-info-bar{
+    
+        border-radius: 50%;
 
+}
 .information-section-content ul li img{
     
     width: 30px;
     height: 30px;
-    border-radius: 50%;
 }
 
 .information-section-content ul li span{
     
-    
+    margin-left: 6px;
 }
 
 .first-list-element span{
     
     margin-left: 11px;
 }
+
+
+/* satrt create post section */
+
+.create-page-header{
+    
+    background-color: #F6F7F9;
+    border: 1px solid #DDDFE2;
+    height: 35px;
+    border-radius: 4px 4px;
+}
+.create-page-header i{
+    
+    margin-top: 10px;
+}
+.create-page-header span{
+    
+    margin-left: 5px;
+    
+}
+.create-post-body{
+    
+    background-color:#fff;
+    border-radius: 0 0 4px 4px;
+    height: 167px;
+}
+.create-post-body img{
+    
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+    
+}
+.create-post-body textArea{
+    
+    border: 0;
+    outline: 0;
+    background: transparent;
+    
+    height: 25px;
+    max-height:25px;
+    width: 406px;
+    max-width: 406px;
+    margin-top: 38px;
+    margin-left: 7px;
+    
+}
+.border-top-create-post{
+    
+    border-top: 1px solid #E9EBEE;
+    margin-top: 15px;
+}
+.create-page-footer{
+    
+    margin-top: 23px;
+   
+    
+}
+.create-page-footer div{
+    
+    
+    background-color: #F6F7F9;
+    border-radius: 72px;
+    height: 33px;
+    line-height: 29px;
+    cursor: pointer;
+    
+}
+.create-page-footer div:hover{
+    
+    
+    background-color: #4F5563;
+    color:#fff;
+    
+}
+
+/* start posts section */
+.posts{
+    
+    background-color:#fff;
+    margin-top: 10px;
+    width: 95%;
+    margin-left: 14px;
+    
+    border-radius: 6px;
+}
+
+.post-title{
+    margin-top: 19px;
+    margin-left: -10px;
+    border-bottom: 1px solid #E9EBEE;
+}
+.post-title span{
+    float: left;
+    color: blue;
+}
+.post-title p{
+    margin-left: 15px;
+    float: left;
+}
+
+.post-body-image{
+    
+    
+}
+.post-person-content{
+    
+    padding-bottom: 90px;
+}
+.post-body-image .post-person-content img{
+    
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 10px;
+    
+    
+}
+.post-body-image .post-person-content p{
+    
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+    
+}
+.post-body-image .post-person-content time{
+    float: left;
+    margin-left: -108px;
+    margin-top: 25px;
+    
+}
+.post-body-image .post-person-content span{
+
+    float: left;
+    margin-left: 364px;
+    margin-top: -37px;
+    
+}
+.post-description{
+    
+    margin-top: 36px;
+}
+.post-description .person-description{
+    
+    
+}
+.post-description img{
+    
+    width: 476px;
+    height: 353px;
+}
+.post-description .page-description{
+    
+   
+    padding-top: 19px;
+    padding-right:  19px;
+    padding-left: 19px;
+    padding-bottom:5px;
+
+}
+.page-description-load-more{
+    
+    margin-left: 17px;
+    margin-bottom: 11px;
+}
+.page-content-border{
+    border-bottom:  1px solid #E9EBEE;
+    border-right: 1px solid #E9EBEE;
+    border-left: 1px solid #E9EBEE;
+    
+}
+.post-description , .page-description{
+    
+   
+}
+
+.post-liks-comments-number{
+    
+    border-bottom: 1px solid #E9EBEE;
+    height: 39px;
+}
+
+.post-liks-comments-number i{
+    
+    float: left;
+    margin-top: 11px;
+}
+.post-liks-comments-number .number-of-liks{
+    
+    float: left;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.post-liks-comments-number .number-of-comments{
+    float: left;
+    margin-left: 274px;
+    margin-top: 10px;
+}
+.post-liks-comments-number .number-of-shares{
+    float: left;
+    margin-left: 16px;
+    margin-top: 10px
+}
+
+.like-share-comment-post{
+    
+    margin-top: 5px;
+    margin-left: -30px;
+}
+
+.previouse-commments-on-this-post{
+    
+    background-color: #F6F7F9; 
+    width: 106%;
+    margin-left: -15px
+    
+}
+.write-comment{
+    
+    margin-top: 15px;
+}
+.write-comment img{
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.write-comment input{
+    
+    width: 432px;
+    padding: 8px;
+    border-radius: 33px;
+    border: 1px solid #DDDFE2;
+    height: 34px;
+    margin-left: 6px;
+}
+
+.list-of-previouse-comments{
+    
+    
+}
+.list-of-previouse-comments ul{
+    
+    list-style: none;
+    margin-left: -39px;
+    margin-top: 22px;
+}
+.list-of-previouse-comments ul li{
+    
+    
+}
+.list-of-previouse-comments ul li img{
+    
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+}
+.list-of-previouse-comments ul li ul{
+    
+        list-style: none;
+        margin-left: 5px;
+        
+}
+.list-of-previouse-comments ul li ul li{
+    
+        list-style: none;
+        
+}
+.list-of-previouse-comments ul li .comment-owner-name{
+    margin-left: 43px;
+    margin-top: -31px;
+    
+}
+.list-of-previouse-comments ul li .comment-it-self{
+    
+    margin-left: 42px;
+    margin-top: -2px;
+}
+.list-of-previouse-comments ul li .comment-time{
+    
+    margin-left: 42px;
+    margin-top: -14px;
+}
+.list-of-previouse-comments ul li .like-ind-comment{
+    
+    margin-left: 42px;
+    color: blue;
+}
+.list-of-previouse-comments ul li .reply-ind-comment{
+    
+    margin-left: 75px;
+    margin-top: -29px;
+    color: blue;
+}
+/* start suggested frinds groups pages section */
+.suggested-friends{
+    
+    background-color: #fff;
+    height: 269px;
+    border-radius: 6px;
+    
+}
+.suggested-friends .suggested-friends-title{
+    
+    margin-left: 8px;
+    padding-top: 12px;
+    
+}
+.suggested-friends .see-all-suggested-friends{
+    
+    float: right;
+    margin-top: -28px;
+    color: blue;
+    margin-right: 8px;
+}
+.suggested-friends ul{
+    
+    list-style: none;
+    margin-left: -41px;
+}
+.suggested-friends ul li{
+    
+    margin-top: 20px;
+    margin-left: 8px;
+}
+.suggested-friends ul li img{
+    
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.suggested-friends ul li .sugested-friend-name{
+    margin-left: 81px;
+    margin-top: -56px;
+    
+}
+.suggested-friends ul li .add-suggested-friend {
+    margin-left: 69px;
+    height: 30px;
+    line-height: 13px;
+    margin-top: -11px;
+
+}
+
+/* suggested groups section */
+
+.home-page-suggested-section{
+    
+    margin-left: -31px;
+}
+.suggested-group{
+    
+    background-color: #fff;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+.suggested-group .suggested-groups-title{
+    margin-left: 9px;
+    padding-top: 9px;
+}
+.suggested-group .see-all-suggested-groups{
+    margin-left: 248px;
+    margin-top: -28px;
+    color: blue;
+}
+.suggested-group ul{
+    
+  list-style: none;
+}
+.suggested-group ul li{
+    
+    margin-left: -35px;
+ 
+}
+.suggested-group ul li img{
+    
+    width: 292px;
+    height: 204px;
+}
+.suggested-group ul li .sugested-group-name{
+    
+    margin-left: 11px;
+    margin-top: 16px;
+    color : blue;
+    
+}
+.suggested-group ul li .sugested-group-des{
+    margin-left: 10px;
+    margin-top: -9px;
+    color: #9094BD;
+
+}
+.suggested-group ul li .join-group{
+    
+    margin-left: 194px;
+    margin-top: -98px;
+}
+/* start friends section  */
+
+.home-page-friends-section{
+    
+    height: 514px;
+    border-left: 1px solid #CCCCCC;
+    margin-left: 21px;
+    
+}
+.all-friends-users-list{
+    
+    
+}
+.all-friends-users-list ul{
+    
+    list-style: none;
+}
+.all-friends-users-list ul li{
+    
+    margin-top: 18px;
+}
+.all-friends-users-list ul img{
+    
+        
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: -48px;
+}
+.all-friends-users-list ul p{
+    
+    margin-top: -32px;
+    
+}
+.all-friends-users-list ul time{
+    
+    float: right;
+    margin-right: -11px;
+    margin-top: -29px;
+}
+
+
 /* end home page */
