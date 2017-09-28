@@ -6,44 +6,7 @@
 
 <div class="cover-menu-bar-section col-lg-7 col-lg-offset-1">
     
-    <div class="cover-image">
-        
-        <img src="{{ asset('images/core/2.jpg') }}" />
-        <p>Ahmed Ekafrawy</p>
-        <button>Update Info</button>
-        
-    </div>
-    <div class="profile-page-nav-bar">
-        
-        <nav class="navbar profile-page-nav-content  navbar-default navbar-static-top">
-            <div class="container nav-profile-container">
-                <div class="navbar-header mynavbar-header">
-                    <!-- Branding Image -->
-                    <a class="navbar-brand profile-iamge" href="#"> 
-                    
-                        <img class="profile-picture" src="{{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }}" />
-                    </a>
-                    <a class="navbar-brand" href="#">
-                       TimeLine
-                    </a>
-                    <a class="navbar-brand" href="#">
-                       Friends 
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        Pages
-                    </a>
-                    <a class="navbar-brand" href="#">
-                       Groups
-                    </a>
-                    <a class="navbar-brand" href="#">
-                        Events
-                    </a>
-                </div>
-
-            </div>
-        </nav>
-        
-    </div>
+    @include('profilepagecovermenu')
     <div class="profile-page-suggested-friends col-lg-12">
         <div class="profile-page-sug-fr-head col-lg-12">
             

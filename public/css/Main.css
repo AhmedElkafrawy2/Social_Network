@@ -1062,3 +1062,117 @@ html , body {
     width: 75.667%;
 }
 /* end profile page */
+
+/* start friends page */
+
+.friends-page-friends-list{
+    
+    position: fixed;
+    left: 882px;
+    top: 79px;
+    height: 514px;
+    border-left: 1px solid #CCCCCC;
+    overflow-y: auto;
+   
+}
+
+
+.friends-page-friends-list-content{
+    
+    background-color: #fff;
+    margin-left: -4px;
+    width: 105%;
+}
+
+.header-friends-list{
+    
+    background-color: #F6F7F9;
+    height: 75px;
+    width: 104%;
+    margin-left: -15px;
+} 
+
+.title-friends-p{
+    
+    
+}
+
+.title-friends-p img{
+    
+    margin-left: 18px;
+    margin-top: 8px;
+}
+.title-friends-p p{
+    margin-top: -28px;
+    margin-left: 59px;
+    font-size: 18px;
+    
+}
+.title-friends-p button{
+    
+    position: absolute;
+    left: 672px;
+    top: 14px;
+    border: 1px solid #CACBCE;;
+    background-color: #fff;
+    border-radius: 3px;
+    height: 28px;
+    padding: 4px;
+}
+
+.all-friends-or{
+    
+   margin-left: 24px;
+}
+.all-friends-or a{
+    
+   text-decoration: none;
+}
+.all-friends-or .rec-added{
+    
+   margin-left: 12px;
+}
+
+.body-friends-list{
+    
+    
+}
+.body-friends-list ul{
+    
+    list-style: none;
+}
+.body-friends-list ul li{
+    
+   margin-top: 15px;
+   margin-left: -9px;
+   
+  
+}
+.body-friends-list ul li:nth-child(even){
+    float: right;
+    margin-right: -35px;
+    
+   
+  
+}
+.body-friends-list ul li img{
+    
+margin-left: -49px;
+width: 172px;
+height: 122px;
+   
+}
+.body-friends-list ul li p{
+    
+    margin-left: 136px;
+    margin-top: -97px;
+    font-size: 16px;
+}
+.body-friends-list ul li span{
+    
+    margin-left: 134px;
+}
+.body-friends-list ul li button{
+    width: 140px;
+    height: 35px;
+}

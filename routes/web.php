@@ -22,9 +22,14 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 /*
+ * reoute to friends page
+ */
+Route::get("/friends" , "ProfilePageController@friends")->name("friends");
+
+
+/*
  * make route to user profile page 
  * 
  */
-Route::get("/{username}" , "ProfilePageController@userprofilepage");
-
+Route::get("/{username}" , "ProfilePageController@userprofilepage")->name("profile");
 

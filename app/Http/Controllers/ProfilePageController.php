@@ -11,4 +11,10 @@ class ProfilePageController extends Controller
         
         return view('profile');
     }
+    
+    
+    public function friends(){
+        
+        return view('friendspage');
+    }
 }
