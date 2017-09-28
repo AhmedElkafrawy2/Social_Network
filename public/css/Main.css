@@ -174,6 +174,10 @@ html , body {
     height: 67px;
     margin-top: 0px;
     margin-left: -54px;
+    border:0;
+    position: fixed;
+    width: 1404px;
+    z-index: 9999;
 }
 .mynavbar-header .navbar-brand{
     
@@ -659,10 +663,18 @@ html , body {
 }
 
 /* suggested groups section */
-
+.home-page-left-section{
+    
+    margin-top: 86px;
+}
+.home-page-posts-section{
+    
+    margin-top: 87px;
+}
 .home-page-suggested-section{
     
     margin-left: -31px;
+    margin-top: 87px;
 }
 .suggested-group{
     
@@ -718,15 +730,19 @@ html , body {
     height: 514px;
     border-left: 1px solid #CCCCCC;
     margin-left: 21px;
+    position: fixed;
+    left: 1088px;
+    top: 89px;
     
 }
 .all-friends-users-list{
     
-    
+    margin-top: -22px;
 }
 .all-friends-users-list ul{
     
     list-style: none;
+    
 }
 .all-friends-users-list ul li{
     
@@ -754,3 +770,295 @@ html , body {
 
 
 /* end home page */
+
+
+/* start profile page */
+
+/* profile page cover and content section */
+.cover-menu-bar-section{
+    
+    margin-top: -20px;
+    margin-left: 100px;
+}
+.cover-image{
+    
+}
+.cover-image img{
+    
+    width: 787px;
+    height: 330px;
+    margin-left: -15px;
+}
+.cover-image p{
+    position: absolute;
+    top: 276px;
+    left: 240px;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.cover-image button{
+    position: absolute;
+    top: 276px;
+    left: 593px;
+    border: 0;
+    width: 133px;
+    height: 28px;
+    border-radius: 4px;
+}
+
+.profile-page-nav-content{
+    
+    border: 1px solid #CCC;
+    width: 104%;
+    margin-left: -16px;
+    
+}
+.profile-page-nav-content div div .navbar-brand{
+    
+    color:#365899;
+    
+    margin-top: 0px;
+    font-size: 16px;
+    margin-left: -20px !important;
+    width: 133px;
+  
+}
+.profile-page-nav-content div div .navbar-brand img{
+    top: -167px;
+    left: 17px;
+    width: 201px;
+    height: 210px;
+    float: left;
+    margin-right: 20px;
+    margin-top: -9px;
+    position: absolute;
+        
+  
+}
+.profile-page-nav-content div div .navbar-brand:hover{
+    
+    color:#365899;
+
+  
+}
+.profile-page-nav-content div div .navbar-brand:focus{
+    
+    color:#4B4F56;
+
+  
+}
+
+.profile-iamge{
+    
+     width: 253px !important;
+     border: 0 !important;
+     color:#4B4F56;
+}
+/* profile page friends section */
+.profile-page-friends-list{
+    
+    height: 514px;
+    border-left: 1px solid #CCCCCC;
+    position: fixed;
+    left: 882px;
+    top: 83px;
+    
+}
+
+.profile-page-suggested-friends{
+    
+    background-color: #fff;
+    width: 104%;
+    margin-left: -16px;
+    border-radius: 6px;
+    height: 275px;
+}
+.profile-page-sug-fr-head{
+    
+   background-color: #F6F7F9;
+   width: 104%;
+   margin-left: -15px;
+   border-radius: 6px 6px 0 0;
+    
+}
+.profile-page-sug-fr-head p{
+    
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+}
+
+.profile-page-sug-fr-head span{
+    
+    float: left;
+    margin-left: 541px;
+    margin-top: 8px;
+    color: blue;
+    
+}
+.profile-page-sug-fr-head i{
+    
+    float: left;
+    margin-left: 603px;
+    margin-top: -17px;
+    
+}
+
+
+.profile-page-sug-fr-body{
+    
+    
+}
+.profile-page-sug-fr-body ul{
+    
+    list-style: none;
+    margin-left: -57px;
+}
+
+.profile-page-sug-fr-body ul li{
+    
+    float: left;
+    width: 20%;
+}
+.profile-page-sug-fr-body ul li img{
+    
+    width: 127px;
+    height: 121px;
+    margin-top: 19px;
+    
+}
+.profile-page-sug-fr-body ul li .cont-frie-list{
+    
+    border: 1px solid #EBEBEB;
+    width: 127px;
+    height: 86px;   
+}
+.profile-page-sug-fr-body ul li p{
+    
+    font-size: 17px;
+    margin-top: 5px;
+    margin-left: 4px;
+    width: 121px;
+}
+.profile-page-sug-fr-body ul li .mut-frie{
+    
+    margin-top: -10px;
+    margin-left: 13px;
+    font-size: 14px;
+}
+.profile-page-sug-fr-body ul li button{
+    margin-left: 13px;
+   width: 96px;
+   height: 22px;
+   line-height: 4px;
+   margin-top: -7px;
+}
+.profile-page-left-section{
+    
+    margin-left: -30px;
+    margin-top: 14px;
+}
+/* start the update info section in profile page */
+
+.update-information{
+    
+    background-color:#fff;
+    border-radius: 6px;
+    height: 231px;
+    
+}
+.profile-page-lift-bar-photos{
+    
+    margin-top: 10px;
+    border-radius: 6px;
+    height: 348px;
+}
+.update-info-head{
+    
+    
+}
+
+.update-info-head img{
+    
+    margin-left: -2px;
+    margin-top: 8px;
+}
+
+.update-info-head p{
+    
+    margin-left: 35px;
+   font-size: 18px;
+   margin-top: -26px;
+}
+
+.update-info-body{
+    
+    
+}
+.update-info-body ul{
+    
+    list-style: none;
+    margin-left: -37px;
+    margin-top: 26px;
+}
+.update-info-body ul li{
+    
+    
+}
+.update-info-body ul li i{
+    
+    
+}
+.update-info-body ul li p{
+    
+    margin-left: 31px;
+    margin-top: -20px;
+}
+.profile-page-lift-bar-photos{
+    
+   background-color: #fff;
+}
+.display-photo-body{
+    
+    
+}
+.display-photo-body ul{
+    
+    list-style: none;
+    margin-left: -37px;
+    margin-top: 18px;
+}
+.display-photo-body ul li{
+    
+    float: left;
+    padding: 2px;
+    
+}
+.display-photo-body ul li img{
+    
+    width: 87px;
+   height: 88px;
+}
+.display-photo-body ul li p{
+    
+    
+}
+
+
+.profile-page-lift-bar-friends{
+    
+    margin-top: 7px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.profile-page-posts-section{
+    
+    float: right;
+    margin-right: -44px;
+    margin-top: 15px;
+    width: 75.667%;
+}
+/* end profile page */
