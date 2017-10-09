@@ -13,6 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/jquery.fileuploader.css') }}" rel="stylesheet">
     <link href="{{ asset('css/Main.css') }}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="{{ asset('js/html5shiv.min.js') }}"></script>
@@ -21,13 +22,19 @@
 </head>
 <body>
    
-
+        <div class="create-post-opacity"></div>
         @yield('content')
     
     
     <!-- Scripts -->
-    <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+    <script
+       src="https://code.jquery.com/jquery-1.12.4.js"
+       integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+       crossorigin="anonymous">
+    </script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('js/jquery.fileuploader.min.js') }}"></script>
+    <script src="{{ asset('js/notify.min.js') }}"></script>
     <script src="{{ asset('js/Main.js') }}"></script>
 </body>
 </html>

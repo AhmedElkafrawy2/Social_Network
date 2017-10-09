@@ -18,16 +18,16 @@
                     <a class="navbar-brand" href="#">
                        TimeLine
                     </a>
-                    <a class="navbar-brand" href="{{ route('friends') }}">
+                    <a class="navbar-brand" href="{{ url("/") . "/" . $username . "/friends" }}">
                        Friends 
                     </a>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ url("/") . "/" .  $username . "/pages" }}">
                         Pages
                     </a>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ url("/") . "/" .  $username . "/groups" }}">
                        Groups
                     </a>
-                    <a class="navbar-brand" href="#">
+                    <a class="navbar-brand" href="{{ url("/") . "/" .  $username . "/events" }}">
                         Events
                     </a>
                 </div>

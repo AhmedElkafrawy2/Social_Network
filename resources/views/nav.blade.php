@@ -23,11 +23,11 @@
                         <!-- Authentication Links -->
                         
                         <li>
-                            <a href="{{ url('/') . "/" .Auth::user()->firstname }}" class="go-to-profile-page"> 
+                            <a href="{{ url('/') . "/" .Auth::user()->firstname .Auth::user()->lastname }}" class="go-to-profile-page"> 
                                 <img src=" {{ asset('images/core/12938289_1687755138141525_6332429060813916871_n.jpg') }} " style="width:30px;height:30px;" />
                                 <span>Ahmed</span>               
                             </a>
-                            <a href="" class="go-to-homepage">
+                            <a href="{{ url("/") }}" class="go-to-homepage">
                                 <span>Home</span>
                             </a>
                             <a href="">

@@ -12,16 +12,16 @@
             
             <div class="title-friends-p">
                 
-                <img src="{{ asset('images/core/friendspagefriends.png') }}" />
-                <p>Friends</p>
-                <button>friends request</button>
+                <img src="{{ asset('images/core/likespage.png') }}" />
+                <p>Pages</p>
+                
                     
             </div>
             <div class="all-friends-or">
                 
-                <a href="#">all friends</a>
-                <a href="#" class="rec-added">recently added</a>
-                
+                <a href="#">all Pages</a>
+                <a href="#" class="rec-added">recently Like</a>
+                <input type="text" name="search-friendspage" class="search-friendspage" placeholder="Search pages" />
             </div>
             
         </div>
@@ -30,33 +30,41 @@
             <ul>
                 
                 <li class="col-lg-6">
-                  
+                    <div class="abs-div-border"></div>
                     <img src="{{ asset('images/core/2.jpg') }}" />
                     <p>Ahmed Ali</p>
-                    <span>2 mutual friends</span>
-                    <button class="btn btn-primary">Add Friend</button> 
-                   
+                    <span>2 Members</span>
+                    <button class="btn btn-primary">Like</button> 
                         
                 </li>
+              
                 <li class="col-lg-6">
-                  
+                    <div class="abs-div-border"></div>
                     <img src="{{ asset('images/core/2.jpg') }}" />
                     <p>Ahmed Ali</p>
-                    <span>2 mutual friends</span>
-                    <button class="btn btn-default">Add Friend</button> 
-                   
+                    <span>2 Members</span>
+                    <button class="btn btn-primary">Like</button> 
                         
                 </li>
+              
                 <li class="col-lg-6">
-                  
+                    <div class="abs-div-border"></div>
                     <img src="{{ asset('images/core/2.jpg') }}" />
                     <p>Ahmed Ali</p>
-                    <span>2 mutual friends</span>
-                    <button class="btn btn-default">Add Friend</button> 
-                   
+                    <span>2 Members</span>
+                    <button class="btn btn-primary">Like</button> 
                         
                 </li>
-                
+              
+                <li class="col-lg-6">
+                    <div class="abs-div-border"></div>
+                    <img src="{{ asset('images/core/2.jpg') }}" />
+                    <p>Ahmed Ali</p>
+                    <span>2 Members</span>
+                    <button class="btn btn-primary">Like</button> 
+                        
+                </li>
+              
             </ul>
             
         </div>

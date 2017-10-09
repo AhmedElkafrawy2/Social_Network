@@ -9,7 +9,7 @@
                    
                     
 
-                    <div class="panel-body">
+                    <div class="panel-body col-md-12">
                         <form class="form-horizontal" method="POST" action="{{ route('register') }}">
                             {{ csrf_field() }}
 
@@ -52,14 +52,7 @@
                                     @endif
                                 </div>
                             </div>
-                            <div class="form-group gender-container">
-                                
-                                <label for="email" class="col-md-4 control-label">Gender</label>
-                                <div class="col-md-6">
-                                    <label class="radio-inline"><input type="radio" name="optradio" value="male" checked>Male</label>
-                                    <label class="radio-inline"><input type="radio" name="optradio" value="female">Female</label>
-                                </div>
-                            </div>
+
                             <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                 <label for="password" class="col-md-4 control-label">Password</label>
 
@@ -80,6 +73,59 @@
                                 <div class="col-md-6">
                                     <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                                 </div>
+                            </div>
+                            <div class="form-group gender-container">
+                                
+                                <label for="email" class="col-md-4 control-label">Gender</label>
+                                <div class="col-md-6">
+                                    <label class="radio-inline"><input type="radio" name="optradio" value="male" checked>Male</label>
+                                    <label class="radio-inline"><input type="radio" name="optradio" value="female">Female</label>
+                                </div>
+                            </div>
+                            <div class="form-group birthday-register">
+                                <div class="col-md-1">
+                                    
+                                    <label for="email" class="control-label">BirthDay</label>
+                                </div>
+                                <div class="col-md-1{{ $errors->has('birth-day') ? ' has-error' : '' }}">
+                                    <select class="form-control" name="birth-day">
+                                        <option value="0">D</option>
+                                        <?php
+                                            for($i=1 ; $i<= 31 ; $i++){
+
+                                                echo "<option>". $i ."</option>";
+                                            }
+                                        ?>
+
+                                    </select>
+
+                                </div>
+                                <div class="col-md-1{{ $errors->has('birth-month') ? ' has-error' : '' }}">
+                                    <select class="form-control"  name="birth-month">
+                                        <option value="0">M</option>
+                                        <?php
+                                        for($i=1 ; $i<= 12 ; $i++){
+                                          
+                                            echo "<option>". $i ."</option>";
+                                        }
+                                        ?>
+                                    
+                                    </select>
+                                </div>
+                                <div class="col-md-1{{ $errors->has('birth-year') ? ' has-error' : '' }}">
+                                    <select class="form-control"  name="birth-year">
+                                        <option value="0">Y</option>
+                                        <?php
+                                        for($i=1990 ; $i<= 2017 ; $i++){
+                                          
+                                            echo "<option>". $i ."</option>";
+                                        }
+                                        ?>
+                                    
+                                    </select>
+                                </div>
+                                
+
                             </div>
 
                             <div class="form-group">
