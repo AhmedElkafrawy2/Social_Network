@@ -6,6 +6,8 @@
 
 <div class="cover-menu-bar-section col-lg-7 col-lg-offset-1">
     
+    
+    
     @include('profilepagecovermenu')
     <div class="profile-page-suggested-friends col-lg-12">
         <div class="profile-page-sug-fr-head col-lg-12">
@@ -77,34 +79,53 @@
                 
                 <ul>
                     
-                    <li>
-                        
-                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                        <p>Education  Engineering </p>
-                    </li>
-                    <li>
-                        
-                        <i class="fa fa-briefcase" aria-hidden="true"></i>
-                        <p>worked at vodafone</p>
-                    </li>
-                    <li>
-                        
-                        <i class="fa fa-birthday-cake" aria-hidden="true"></i>
-                        <p>birthday : 12 may 2017 </p>
-                        
-                    </li>
-                    <li>
-                        
-                        <i class="fa fa-male" aria-hidden="true"></i>
-                        <p>male </p>
-                        
-                    </li>
-                    <li>
-                        
-                        <i class="fa fa-heart" aria-hidden="true"></i>
-                        <p>engaged</p>
-                        
-                    </li>
+                    @if($hasinfo == 1)
+                        @if($education !== "")
+                        <li>
+                            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                            <p>
+                                Education  {{ $education }}
+                            </p>
+                        </li>
+                        @endif
+                        @if($work !== "")
+                        <li>
+
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                            <p>worked at {{ $work }}</p>
+                        </li>
+                        @endif
+                        @if($birthday !== "")
+
+                        <li>
+
+                            <i class="fa fa-birthday-cake" aria-hidden="true"></i>
+                            <p>birthday : {{ $birthday }} </p>
+
+                        </li>
+                        @endif
+                        @if($gender !== "")
+                        <li>
+
+                            <i class="fa fa-male" aria-hidden="true"></i>
+                            <p> {{ $gender }} </p>
+
+                        </li>
+                        @endif
+                        @if($social !== "")
+                        <li>
+
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <p>{{ $social }}</p>
+
+                        </li>
+                        @endif
+                    @else
+                        <li>
+                            <i class="fa fa-asterisk" aria-hidden="true"></i>
+                            <p>No Information To Show</p>
+                        </li>
+                    @endif
                     
                 </ul>
                 

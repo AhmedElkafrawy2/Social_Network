@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Input;
 use Auth;
 use File;
+use App\Post;
+use Illuminate\Support\Facades\DB;
 class PostsController extends Controller
 {
 
@@ -16,36 +18,58 @@ class PostsController extends Controller
         $emotion       = $request->input("emotion");
         $postPrivacy   = $request->input("postPrivacy");
 
-         if($request->hasFile('image')){
-          
-             
-             
+        
+        //$request->hasFile('image')
+        $arrayofimages = "|";
+        if($request->hasFile('0')){
+            
+          $numersofimages = $request->input("numerofimages");
          if (! File::exists(public_path()."/images/". Auth::user()->email)) {
              File::makeDirectory(public_path()."/images/".Auth::user()->email);
          }
-         $names = [];
-         $files[] = $request->file('image');
-         return count($request->file('image'));
-            
-         foreach ($files as $file) {
-          $names[] = $file->getClientOriginalName();
-         }
-           
          
-         //$holddata[];
-         $images = $request->file('image');
-         foreach($images as $image){
+         for($i = 0; $i <= $numersofimages ; $i++){
              
-            $filename  = time()."-".$image->getClientOriginalName();
-            $image->move(public_path("/images/".Auth::user()->email), $filename);
-           
-         }
-  
-        //$content = $request->getContent();
-        //data = json_decode($content, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
-        
-        //return response()->json(['success'=>'Added new records.']);
-         }
+             $file = $request->file($i);
+             $imagename = time()."-".$file->getClientOriginalName();
+             $file->move(public_path("/images/".Auth::user()->email), $imagename);
+             $arrayofimages .= $imagename . "|";
+             
           
+          }
+         }
+         
+        $arrayofimages =  rtrim($arrayofimages, "|");
+        $arrayofimages =  ltrim($arrayofimages, "|");
+         
+        // insert data into posts table;
+        /*
+         DB::table('posts')->insert(
+           [
+             'user_id' => Auth::user()->id, 
+             'post_text' => $posttext ,
+             'post_images' => $arrayofimages,
+             'post_emotions' => $emotion,
+             'post_privacy' => $postPrivacy
+               
+           ]
+         
+        );
+         */
+        $post = new Post;
+
+        $post->user_id = Auth::user()->id;
+        $post->post_text = $posttext;
+        $post->post_images = $arrayofimages;
+        $post->post_emotions = $emotion;
+        $post->post_privacy = $postPrivacy;
+
+        $post->save();
+        
+        if($post){
+            
+            return "post";
+        }
+        
     }
 }

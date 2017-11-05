@@ -11,9 +11,11 @@
     <title>Social_Network @yield('title')</title>
 
     <!-- Styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.fileuploader.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/crop.css') }}" rel="stylesheet">
     <link href="{{ asset('css/Main.css') }}" rel="stylesheet">
     <!--[if lt IE 9]>
     <script type="text/javascript" src="{{ asset('js/html5shiv.min.js') }}"></script>
@@ -33,8 +35,10 @@
        crossorigin="anonymous">
     </script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     <script src="{{ asset('js/jquery.fileuploader.min.js') }}"></script>
     <script src="{{ asset('js/notify.min.js') }}"></script>
+    <script src="{{ asset('js/crop.js') }}"></script>
     <script src="{{ asset('js/Main.js') }}"></script>
 </body>
 </html>

@@ -70,6 +70,7 @@ class RegisterController extends Controller
         return User::create([
             'firstname' => $data['firstname'],
             'lastname' => $data['lastname'],
+            'unique_user_id' => $data['firstname'].time(),
             'gender'   => $data['optradio'],
             'email' => $data['email'],
             'birthday' => Carbon::createFromDate($data['birth-year'], $data['birth-month'], $data['birth-day']),
