@@ -450,6 +450,15 @@ $(document).ready(function(){
            backdrop: 'static'
         }); 
     });
+    
+    
+    // click on add friend btn
+    
+    $(".Add-Friend").on("click",function(){
+        
+        alert("Add friend");
+        
+    })
  
 });
 

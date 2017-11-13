@@ -13,9 +13,22 @@
             {{ $username }}
          @endif
         </p>
+        
         @if($isauth == 1)
         <button class="update-profile-information">Update Info</button>
+        @else
+            @if($isfriend == 0)
+                <button class="Add-Friend">Add Friend</button>
+            @endif
+            @if($isfriend == 1)
+                <button class="cancle-friend-request">Cancle friend Request</button>
+            @endif
+            @if($isfriend == 2)
+                <button class="accept-Friend-request">Accept Friend Request</button>
+            @endif
+            
         @endif
+        
     </div>
     <div class="profile-page-nav-bar">
         <div class="edit-profie-img-container">

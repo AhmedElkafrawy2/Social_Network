@@ -60,7 +60,7 @@ class ProfilePageController extends Controller
    
         
         $user_auth_unique_id = DB::table('users')->select('unique_user_id')->where("unique_user_id" , Auth::user()->unique_user_id)->first();
-        $user_normal_unique_id = DB::table('users')->select('unique_user_id')->where("unique_user_id" , $username)->first();
+        $user_normal_unique_id = DB::table('users')->select()->where("unique_user_id" , $username)->first();
         
         $acualname1 = DB::table('users')->select('firstname')->where("unique_user_id" , $username)->first();
         $acualname2 = DB::table('users')->select('lastname')->where("unique_user_id" , $username)->first();
@@ -85,6 +85,47 @@ class ProfilePageController extends Controller
             
             $hasinfo = 1 ;
         }
+        
+        // check if it's user on not to send friend request
+        
+        //$usertosend = DB::table("users")->select()
+             //   ->where("unique_user_id",$user_normal_unique_id->id)->first();
+        
+        
+        $useidtodend = $user_normal_unique_id->id;
+        $userauthid = Auth::user()->id;
+        
+        $checkifsendbefor1 = DB::table("add_friends")->select()
+                ->where([
+                    ["user_send_id",$useidtodend],
+                    ["user_recive_id",$userauthid]
+                ])->first();
+
+        $checkifsendbefor2 = DB::table("add_friends")->select()
+                ->where("user_send_id",$userauthid)->where("user_recive_id",$useidtodend)->first();
+        
+        //$count1 = $checkifsendbefor1->id;
+        //$count2 = $checkifsendbefor2->id;
+        
+        $isfriend;
+        if($checkifsendbefor1 !== null || $checkifsendbefor2 !== null){
+            
+            if($checkifsendbefor1 !== null){
+                // i send to him friend request befor
+                $isfriend  = 1;
+            }else if($checkifsendbefor2 !== null){
+                // he send to me friend request befor
+                $isfriend = 2;
+            }
+          
+        }else{
+            // not friend request
+            $isfriend = 0;
+        }
+        
+        
+        
+        
         $acualname = $acualname1->firstname . " " . $acualname2->lastname;
         $isauth;
         $user = Auth::user()->firstname . Auth::user()->lastname ; 
@@ -102,7 +143,8 @@ class ProfilePageController extends Controller
              "gender" => $gender,
              "work" => $work,
              "social" =>$socail,
-             "hasinfo" => $hasinfo
+             "hasinfo" => $hasinfo,
+             "isfriend" => $isfriend
              );
          
          return $data;
